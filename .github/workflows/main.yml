@@ -11,7 +11,7 @@ jobs:
           $Password = ConvertTo-SecureString "123qwe!@#QWE" -AsPlainText -Force
           New-LocalUser -Name "mishukaa" -Password $Password -FullName "Full Name" -Description "Description"
 
-          Add-LocalGroupMember -Group "Administrators" -Member "mishuka"
+          Add-LocalGroupMember -Group "Administrators" -Member "mishukaa"
 
           Set-ItemProperty -Path "HKLM:\System\CurrentControlSet\Control\Terminal Server" -Name "fDenyTSConnections" -Value 0
 
